@@ -8,6 +8,10 @@ const nextConfig = {
   },
   experimental: {
     serverComponentsExternalPackages: ['fabric']
+  },
+  // Ensure proper port handling for Render
+  env: {
+    PORT: process.env.PORT || '3000'
   }
 };
 
