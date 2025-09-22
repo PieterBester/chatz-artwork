@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: artwork-autobrander
+    name: chatz-artwork
     env: node
     plan: starter
     buildCommand: npm install && npm run build
@@ -13,3 +13,4 @@ services:
     healthCheckPath: /
     autoDeploy: true
     branch: main
+    rootDir: .
